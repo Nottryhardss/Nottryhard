@@ -1,4 +1,1 @@
-vk_api
-wget
-xlrd
-urllib3
+
