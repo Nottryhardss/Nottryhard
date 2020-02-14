@@ -1,4 +1,3 @@
-Python 3.8.1
 vk_api
 wget
 xlrd
