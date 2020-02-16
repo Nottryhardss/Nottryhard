@@ -7,13 +7,13 @@ import wget
 import xlrd
 import time
 
-vk = vk_api.VkApi(token="fcc1b4e4e1a351c3e185047a885b13d0dcc0819a8f188d78a068f333d92fe372ff45cb4ccbf7cbad031ea")
+vk = vk_api.VkApi(token="853ef0df30751a1ad0e0086b0be9a6b855d850bcadea940e3da0a49d899d49067d83b551e33276ee68ada")
 
 vk._auth_token()
 
 vk.get_api()
 
-longpoll = VkBotLongPoll(vk, 192023320)
+longpoll = VkBotLongPoll(vk, 191998639)
 
 while True:
     for event in longpoll.listen():
