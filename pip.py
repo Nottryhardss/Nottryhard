@@ -20,7 +20,7 @@ while True:
         if event.type == VkBotEventType.MESSAGE_NEW:
             if event.object.peer_id != event.object.from_id:
                 userText = event.object.text.lower()
-                if userText == "!#":
+                if userText == "!уртк":
 
                     date = datetime.datetime.now()
 
@@ -70,7 +70,7 @@ while True:
                         if dayOfWeek == 6:
                             dayNikita = dayPlus2
                         else:
-                            dayNikita == dayPlus1
+                            dayNikita = dayPlus1
                     except urllib.error.HTTPError:
 
                         if dayOfWeek == 6:
@@ -303,6 +303,7 @@ while True:
                         vk.method("messages.send", {"peer_id": event.object.peer_id,
                                                     "message": "Расписание 1С1 на " + str(dayNikita) + "." + str(month) + "." + str(year) + "\n" + "\n\n" + couple1 + "\n" + couple2 + "\n" + couple3 + "\n" + couple4,
                                                     "random_id": 0})
+
                     elif coupleFile != "":
                         vk.method("messages.send", {"peer_id": event.object.peer_id,
                                                     "message": coupleFile + "\n\n" + couple1 + "\n" + couple2 + "\n" + couple3 + "\n" + couple4,
